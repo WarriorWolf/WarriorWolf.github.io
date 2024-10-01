@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.pageTitle {
+    font-size: 30px;
+    position: relative;
+    left: 600px;
+    font-weight: bold;
+}
+
+.links {
+    position: fixed;
+    bottom: 0;
+}
