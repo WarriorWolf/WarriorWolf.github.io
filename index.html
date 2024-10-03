@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
-<html style="background-image: url(images/AtHome-NightSky-1080x810-1.jpg)">
+<html>
     <header>
      <h4 class="pageTitle">Enderfox Music Site</h4>
     </header>
+
+    <img class="backgroundImage" src="images/AtHome-NightSky-1080x810-1.jpg">
 
 <head>
     <style>
@@ -30,10 +32,19 @@
             left: 400px;
             top: 200px;
         }
+
+        .backgroundImage {
+            z-index: -1;
+            width: fit-content;
+            height: fit-content;
+            position: fixed;
+    
+        }
      </style>
     </head>
 
     <body>
+
         <div class="musicOption1">
          <img src="images/IMG_20241001_114259_804.jpg" style="width: 200px; height: 200px;">
             <p style="width: 275px; background-color: rgba(12, 46, 183, 0.918);"> Sonic Boom (Remix by DJ_LionFox2024)</p>
