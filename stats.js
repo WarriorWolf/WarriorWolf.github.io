@@ -266,8 +266,8 @@ function dismiss() {
     anti_nuke = 0
     opponent.nukes = 0
     opponent.anti_nukes = 0
- dismissButton.style="position: absolute; left: 500px; top: 1300px; filter: opacity(0%); z-index: 6;"
- options.style="position: absolute; background-color: gray; height: 200px; width: 475px; top: 1500px; left: 200px; border: solid 5px;"
+ dismissButton.style="position: absolute; left: 500px; top: 1200px; filter: opacity(0%); z-index: 6;"
+ options.style="position: relative; background-color: gray; height: 240px; width: 475px; top: 1500px; left: 200px; border: solid 5px; margin: auto;"
     
     if (population_influence === 0){
     gameOver = 1;
