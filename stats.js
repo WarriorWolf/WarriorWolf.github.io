@@ -219,9 +219,9 @@ AI_Dec = 1}
 playerAntiNukeNum.innerHTML = "Anti-Nukes Launched: " + anti_nuke;
 opponentAntiNukeNum.innerHTML = "Anti-Nukes Launched: " + opponent.anti_nukes;
 opponentNukeNum.innerHTML = "Nukes Launched: " + opponent.nukes;
-     store.style="background-color: darkblue; border: solid 10px; position: absolute; top: 600px; filter: opacity(0%);";
-    dismissWar.style="position: absolute; left: 425px; top: 1300px; filter: opacity(100%); z-index: 6;";
-    options.style="position: absolute; background-color: gray; height: 200px; width: 475px; top: 1500px; left: 200px; border: solid 5px; filter: opacity(0%);";
+     store.style="background-color: darkblue; border: solid 10px; position: absolute; top: 600px; filter: opacity(0%); font-size: 35px;";
+    dismissWar.style="position: absolute; left: 425px; top: 1300px; filter: opacity(100%); z-index: 6; font-size: 35px;";
+    options.style="position: absolute; background-color: gray; height: 200px; width: 475px; top: 1500px; left: 200px; border: solid 5px; filter: opacity(0%); font-size: 35px;";
      
      if (anti_nuke > 0 && opponent.nukes > 0) {
      opponent.nukes = opponent.nukes - anti_nuke;
