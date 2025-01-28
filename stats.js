@@ -37,7 +37,8 @@ let warScreen = document.querySelector("#warScreen");
 let warWinnerName = document.querySelector("#warWinnerName");
 let dismissButton = document.querySelector("#dismissWar")
 let statScreen = document.querySelector("#statScreen");
-let options = document.querySelector("#options")
+let options = document.querySelector("#options");
+let uav_message = document.querySelector("#uav_message");
 
 function purchase_Depot() {
 if (money >= 15000) {
@@ -60,6 +61,12 @@ anti_nuke = anti_nuke + 1;
 }
 }
 
+function purchaseUAV() {
+    if (money >= 90000) {
+        money = money - 90000;
+        uav_message.innerHTML = "Enemy nukes: " + opponent.nukes + " Enemy anti-nukes: " + opponent.anti_nukes;
+    }
+}
 
 
 let wait3 = setInterval(function(){
@@ -125,6 +132,7 @@ battle();}}
 }
 
 function nextRound(){
+    uav_message.innerHTML = "";
     money = money + income;
     opponent.money = opponent.money + opponent.income;
     round = round + 1;
@@ -222,7 +230,8 @@ opponentNukeNum.innerHTML = "Nukes Launched: " + opponent.nukes;
      store.style="background-color: darkblue; border: solid 10px; position: absolute; top: 600px; filter: opacity(0%); font-size: 35px;";
     dismissWar.style="position: absolute; left: 425px; top: 1300px; filter: opacity(100%); z-index: 6; font-size: 35px;";
     options.style="position: absolute; background-color: gray; height: 200px; width: 475px; top: 1500px; left: 200px; border: solid 5px; filter: opacity(0%); font-size: 35px;";
-     
+    uav_message.innerHTML = ""; 
+
      if (anti_nuke > 0 && opponent.nukes > 0) {
      opponent.nukes = opponent.nukes - anti_nuke;
      }

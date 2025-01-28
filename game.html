@@ -29,15 +29,17 @@
    }
     
     body {background-color: green;}
+
+    #uav_message {animation-duration: 5s; animation-name: animateMessage;}
 </style>
     
 <fieldset style="position: absolute; background-color: gray; height: 300px; width: 300px; border: solid 5px; font-size: 35px;" id="statScreen"> stats:
-<p id="money"></p>
-<p id="income"></p>
-<p id="influence"></p>
-<p id="antiNukes"></p>
-<p id="nukes"></p>
-<p id="status"></p>
+    <p id="money"></p>
+    <p id="income"></p>
+    <p id="influence"></p>
+    <p id="antiNukes"></p>
+    <p id="nukes"></p>
+    <p id="status"></p>
 </fieldset>
 
 
@@ -51,9 +53,10 @@
     
 <fieldset style="background-color: darkblue; border: solid 10px; position: absolute; top: 400px; filter: opacity(0%); z-index: 5;" id="store">
     <p style="color: white; font-size: 30px;">store </p>
-<button style="background-color: blue; color: white; font-size: 20px" onClick ="purchase_Depot()"> supply depot: (cost: $15000 income: +$1500)</button>
+<button style="background-color: blue; color: white; font-size: 20px" onClick ="purchase_Depot()"> Supply Depot: (cost: $15000 income: +$1500)</button>
 <button style="background-color: red; color: white; font-size: 20px" onClick ="purchase_Nuke()"> Nuke: (cost: $30000)</button>
-<button style="background-color: green; color: white; font-size: 20px" onClick ="purchase_AntiNuke()"> Anti- Nuke: (cost: $20000)</button>
+<button style="background-color: green; color: white; font-size: 20px" onClick ="purchase_AntiNuke()"> Anti-Nuke: (cost: $20000)</button>
+<button style="background-color: rgb(0, 113, 128); color: white; font-size: 22px; display: block; margin: 10px;" onClick="purchaseUAV()">Reconnaissance Satalite: (cost: $90000) [For one round, know what the enemy military supply is.]</button>
 
 </fieldset>
     
@@ -74,7 +77,7 @@
        
     </fieldset>
     
-    
+    <p id="uav_message" style="color: green; background-color: grey; font-size: 50px; left: 500px; top: 150px; position: absolute;"> </p>
     
 <script src="stats.js"></script>
     
