@@ -65,6 +65,9 @@ function purchaseUAV() {
     if (money >= 90000) {
         money = money - 90000;
         uav_message.innerHTML = "Enemy nukes: " + opponent.nukes + " Enemy anti-nukes: " + opponent.anti_nukes;
+        uav_message.style = style="color: green; background-color: grey; font-size: 50px; left: 500px; top: 150px; position: absolute;"
+       
+       
     }
 }
 

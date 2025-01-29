@@ -30,7 +30,9 @@
     
     body {background-color: green;}
 
-    #uav_message {animation-duration: 5s; animation-name: animateMessage;}
+    #uav_message {
+        transition: color 3s;
+    }
 </style>
     
 <fieldset style="position: absolute; background-color: gray; height: 300px; width: 300px; border: solid 5px; font-size: 35px;" id="statScreen"> stats:
@@ -77,7 +79,7 @@
        
     </fieldset>
     
-    <p id="uav_message" style="color: green; background-color: grey; font-size: 50px; left: 500px; top: 150px; position: absolute;"> </p>
+    <p id="uav_message" style="color: rgb(128, 19, 0); background-color: grey; font-size: 50px; left: 500px; top: 150px; position: absolute;"> </p>
     
 <script src="stats.js"></script>
     
